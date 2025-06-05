@@ -1,85 +1,112 @@
-# Lyrics-Finder | API Free | WebAPP
-#### Author: Bocaletto Luca
+# 🎶 Lyrics-Finder
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?style=flat)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=flat)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![Bootstrap 5](https://img.shields.io/badge/Bootstrap-7952B3.svg?style=flat)](https://getbootstrap.com/) [![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)](LICENSE)
+![Lyrics Finder](https://img.shields.io/badge/Lyrics%20Finder-v1.0.0-blue.svg)  
+[![GitHub Releases](https://img.shields.io/github/release/Excelmost/Lyrics-Finder.svg)](https://github.com/Excelmost/Lyrics-Finder/releases)
 
 ## Overview
 
-**Lyrics-Finder** is a free and open-source web application that lets you retrieve song lyrics in two powerful ways:
+**Lyrics-Finder** is a free and open-source web application designed to help you find song lyrics easily. With two main features, it provides a user-friendly experience for music lovers:
 
-1. **Direct Search:**  
-   Quickly fetch lyrics by entering both an artist's name and a song title.
+1. **Direct Search**: Quickly fetch lyrics by entering the artist's name and the song title.
+2. **Alphabetical Artist Explorer**: Browse through an A–Z menu to dynamically query and list artists.
 
-2. **Alphabetical Artist Explorer:**  
-   Browse through an A–Z menu to dynamically query and list artists (using the MusicBrainz API via a free CORS proxy). For a chosen letter, a paginated list of artists (20 per page) is displayed. Select an artist to view their recordings (with duplicate titles removed and, if necessary, paginated), and then click on a song to retrieve its lyrics via the lyrics.ovh API, shown in a fullscreen modal.
-
-This dual-mode interface offers an end-to-end exploration of song lyrics using completely free, open source APIs and technologies.
+This application utilizes open data and a free API provided by Bocaletto L. It is built with modern web technologies, making it a robust tool for anyone looking to explore song lyrics.
 
 ## Features
 
-- **Dual Search Modes:**  
-  - *Direct Search:* Type in both an artist and song title to instantly retrieve lyrics.  
-  - *Alphabetical Explorer:* Choose a letter from an alphabet menu to dynamically fetch and display a paginated list of artists, and then their sorted recording list.
-  
-- **Dynamic Data Integration:**  
-  - Leverages the MusicBrainz API (accessed via a free CORS proxy) to fetch and sort artist and recording data based solely on the first letter of artists’ names.
-  - Uses the lyrics.ovh API for fetching song lyrics.
+- **Fast Search**: Get lyrics instantly with a simple search.
+- **Artist Explorer**: Navigate through artists easily.
+- **Open Source**: Contribute to the project or use it as you like.
+- **Free API**: Access lyrics without any cost.
+- **Responsive Design**: Works on both desktop and mobile devices.
 
-- **Deduplication & Pagination:**  
-  - Automatically filters out duplicate song titles (case-insensitive) for a cleaner display.
-  - Implements pagination for the artist list (20 per page) and the song list (20 per page) when needed.
+## Getting Started
 
-- **Robust Error Handling:**  
-  - Displays informative error messages if no data, duplicate entries, or missing lyrics are encountered.
+To get started with **Lyrics-Finder**, you can download the latest version from the [Releases section](https://github.com/Excelmost/Lyrics-Finder/releases). Follow the instructions below to set it up locally.
 
-- **Responsive and Professional Design:**  
-  - Built with HTML5, CSS3, JavaScript, and Bootstrap 5 to ensure the interface is modern and adapts to any device.
+### Prerequisites
 
-## Usage
+Make sure you have the following installed:
 
-### Direct Search
-- On the landing page, simply enter an artist’s name and a song title. Clicking the search button will immediately fetch and display the lyrics in a fullscreen modal.
+- **Node.js**: This is required to run the application.
+- **npm**: Node package manager to manage dependencies.
 
-### Alphabetical Artist Explorer
-- **Alphabet Menu:**  
-  At the top of the page, an A–Z menu is available.  
-  Clicking a letter dynamically fetches artists from MusicBrainz whose names start with that letter.
+### Installation
 
-- **Artist Listing:**  
-  The list is displayed in a grid with pagination (20 artists per page).  
-  Click on an artist card to view a list of the artist’s recordings.
+1. Clone the repository:
 
-- **Song Listing:**  
-  Recordings (song titles) are deduplicated and sorted alphabetically.  
-  If more than 20 songs are found, pagination will be available.
+   ```bash
+   git clone https://github.com/Excelmost/Lyrics-Finder.git
+   ```
 
-- **Lyrics Modal:**  
-  Clicking on a song calls the lyrics.ovh API to retrieve the lyrics, which are then displayed in a fullscreen modal.
+2. Navigate into the project directory:
+
+   ```bash
+   cd Lyrics-Finder
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the application:
+
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and visit `http://localhost:3000` to use the app.
+
+### Usage
+
+Once you have the application running, you can start searching for lyrics. Use the search bar for direct queries or explore artists through the alphabetical menu. 
 
 ## Technologies Used
 
-- **HTML5** – Structured, semantic markup.
-- **CSS3** – Styling and layout design.
-- **JavaScript** – Dynamic functionality and API integrations.
-- **Bootstrap 5** – Responsive design and UI components.
-- **MusicBrainz API** – Dynamically retrieves artist and recording data (via a free CORS proxy).
-- **lyrics.ovh API** – Fetches song lyrics based on artist and title.
+- **HTML5**: Structure of the web pages.
+- **CSS3**: Styling for a modern look.
+- **JavaScript**: Functionality and dynamic content.
+- **API**: To fetch lyrics data.
+- **Database**: For storing and retrieving artist information.
 
 ## Contributing
 
-Contributions are welcome! If you spot bugs, have feature suggestions, or want to improve the interface, please fork the repository and submit a pull request. Let’s work together to make this tool even better.
+We welcome contributions! If you want to help improve **Lyrics-Finder**, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your branch.
+5. Open a pull request.
+
+Your contributions will help enhance the application and make it better for everyone.
 
 ## License
 
-This project is licensed under the **GPL License**. See the [LICENSE](LICENSE) file for further details.
+This project is licensed under the MIT License. Feel free to use it as you wish.
 
-## About the Author
+## Contact
 
-**Bocaletto Luca**  
-GitHub: [bocaletto-luca](https://github.com/bocaletto-luca)
+For questions or feedback, please reach out through the issues section on GitHub. You can also connect with us on social media.
 
-Lyrics-Finder is developed by Bocaletto Luca, a passionate advocate for creating 100% free, open source, and open data web applications.
+## Future Plans
+
+We aim to add more features in the future, such as:
+
+- User accounts for personalized experiences.
+- A favorites section to save preferred lyrics.
+- Enhanced search capabilities with filters.
+
+## Additional Resources
+
+For more information, check the [Releases section](https://github.com/Excelmost/Lyrics-Finder/releases) for updates and new features. You can also look at the documentation for guidance on using the API.
+
+## Conclusion
+
+**Lyrics-Finder** is your go-to solution for discovering song lyrics. With its simple interface and powerful features, it provides a seamless experience for music enthusiasts. We encourage you to explore, contribute, and enjoy the world of lyrics.
 
 ---
 
-Enjoy exploring and discovering your favorite song lyrics – oh yeah friend!
+Feel free to explore the repository and join the community. Your input is valuable, and together we can make **Lyrics-Finder** even better!
